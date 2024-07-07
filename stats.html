@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Stats Page</title>
+
+         <!-- Required meta tags -->
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+         <!-- Bootstrap CSS -->
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+         <!-- Optional JavaScript -->
+         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="col-9 navbar-brand" href="index.html">XYZ TechnoZ</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"> Home </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="department.html">Departments</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Employee Stats
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="stats.html">Attenddence Stats</a>
+                            <a class="dropdown-item" href="stats.html">Rating Stats</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Overall Stats</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="attendenceStats">
+            <label>Department : </label>
+            <select id="dept">
+                <option>Sales</option>
+                <option>Service</option>
+                <option>Finance</option>
+                <option>IT</option>
+                <option>HR</option>
+            </select>
+            <button id="empList">All Employees</button><br>
+            <label>Select Employee : </label>
+            <select id="nameList"></select><br><br>
+            <button id="attnd">Attendence</button>
+            <div id="setAttend">
+                <label>Enter Attendence : </label>
+                <input type="number" id="attnd">
+                <input type="submit" value="Submit" id="calAttendence()">
+            </div>
+            <button id="rate">Rating</button>
+            <div id="setRating">
+                <label>Select Rating : </label>
+                <select id="performance">
+                    <option>*</option>
+                    <option>**</option>
+                    <option>***</option>
+                    <option>****</option>
+                    <option>*****</option>
+                </select>
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+
+        <script src="stats.html"></script>
+    </body>
+</html>
